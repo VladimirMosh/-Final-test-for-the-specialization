@@ -1,0 +1,544 @@
+mosh@mosh:~$ history
+
+    1  sudo apt update
+
+    2  sudo apt install -y build-essential linux-headers-$(uname -r)
+
+    3  sudo apt install gcc make perl
+
+    4  sudo usermod -aG vboxsf mosh
+
+    5  sudo usermod -aG vboxsf 11
+
+    6  sudo usermod -aG vboxsf mosh
+
+    7  sudo apt update
+
+    8  exit
+
+    9  PS1
+
+   10  bash
+
+   11  echo $PS1
+
+   12  exit
+
+   13  PS1=\u
+
+   14  vi
+
+   15  cd ~
+
+   16  vi cat
+
+   17  cat> file1.txt
+
+   18  ls
+
+   19  type ls
+
+   20  type bash
+
+   21  touch cat
+
+   22  ls
+
+   23  cat > out.txt
+
+   24  ls
+
+   25  echo > echo.out
+
+   26  ls
+
+   27  cat out.txt
+
+   28  ls -l
+
+   29  ll
+
+   30  /dev$
+
+   31  /dev $
+
+   32  ls -l
+
+   33  ll
+
+   34  /dev$
+
+   35  ls -l
+
+   36  cp out.txt /tmp
+
+   37  ls /tmp
+
+   38  cp -r testfolder /tmp
+
+   39  cp -r шаблоны /tmp
+
+   40  cd ~
+
+   41  ls
+
+   42  --help
+
+   43  cp --help
+
+   44  ls
+
+   45  echo >Temp
+
+   46  ls
+
+   47  echo > testfolder
+
+   48  ls
+
+   49  mv out.txt new_out.txt
+
+   50  ls
+
+   51  rm -l les
+
+   52  rm -l cat
+
+   53  mk
+
+   54  rm
+
+   55  --help
+
+   56  rm --help
+
+   57  rm -l Temp
+
+   58  rm -r testfolder
+
+   59  ls
+
+   60  cd lib64
+
+   61  /lib64$
+
+   62  ln -s cat cat.lnk
+
+   63  ls
+
+   64  ls -l
+
+   65  ln -s /etc/apt apt.lnk
+
+   66  ln -l
+
+   67  ls apt.lnk
+
+   68  ls -l
+
+   69  ls -li
+
+   70  ln apt.lnk apt.hardlnk
+
+   71  ls -li
+
+   72  rm apt.lnk
+
+   73  ls -li
+
+   74  ls apt.hardlnk
+
+   75  mv new_out.txt out.txt
+
+   76  ls -li
+
+   77  vi
+
+   78  nano cat
+
+   79  mcedit
+
+   80  cat > file1.txt
+
+   81  cat
+
+   82  cat > file1.txt
+
+   83  cat > file2.txt
+
+   84  cat > file1.txt
+
+   85  cat > file2.txt
+
+   86  cat file2.txt >> file1.txt
+
+   87  touch file3.txt file4.txt
+
+   88  mkdir files
+
+   89  mv file*.txt files/
+
+   90  rm -r files
+
+   91  rm file*.txt
+
+   92  echo "Lesson test" > file1.txt
+
+   93  cp file1.txt file2.txt
+
+   94  ln -s file1.txt file3.txt
+
+   95  ln file1.txt file4.txt
+
+   96  ls -i file*.txt
+
+   97  cat file2.txt
+
+   98  cat.file3.txt
+
+   99  cat file3.txt
+
+  100  cat file4.txt
+
+  101  mv file1.txt text1.txt
+
+  102  mv file2.txt text2.txt
+
+  103  ln -s text1.txt link.txt
+
+  104  ln -s text.txt link2.txt
+
+  105  mkdir files
+
+  106  mv link1.txt link2.txt files/
+
+  107  mv link.txt link2.txt files/
+
+  108  wget https://dev.mysql.com/get/mysql-apt-config_0.8.10-1_all.deb
+
+  109  sudo dpkg -i mysql-apt-config_0.8.10-1_all.deb
+
+  110  sudo apt update
+
+  111  sudo dpkg -i les.deb
+
+  112  sudo dpkg -i example.deb
+
+  113  sudo dpkg -i files.deb
+
+  114  /etc/nginx/nginx.conf
+
+  115  /etc/nginx/nginx.conf.
+
+  116  sudo apt update
+
+  117  sudo apt -y install nginx
+
+  118  echo "deb http://nginx.org/packages/ubuntu `lsb_release -cs` nginx" | sudo tee /etc/apt/sources.list.d/nginx.list
+
+  119  curl -o /tmp/nginx_signing.key https://nginx.org/keys/nginx_signing.key
+
+  120  gpg --dry-run --quiet --import --import-options import-show /tmp/nginx_signing.key
+
+  121  /etc/nginx/nginx.conf
+
+  122  sudo systemctl status nginx
+
+  123  sudo apt install apache2
+
+  124  sudo systemctl start apache2
+
+  125  sudo systemctl enable apache2
+
+  126  service apache2 status
+
+  127  sudo systemctl start apache2
+
+  128  sudo apt install apache2
+
+  129  sudo systemctl start apache2
+
+  130  sudo apt install apache2
+
+  131  sudo systemctl start apache2
+
+  132  sudo systemctl enable apache2
+
+  133  service apache2 status
+
+  134  sudo systemctl status mysql
+
+  135  sudo usermod -aG docker ${user}
+
+  136  su - ${user}
+
+  137  docker run hello-world
+
+  138  mkdir wordpress && cd wordpress
+
+  139  mkdir nginx-conf
+
+  140  nano nginx-conf/nginx.conf
+
+  141  nano .env
+
+  142  nano docker-compose.yml
+
+  143  docker run -tid --name=busybox1 busybox
+
+  144  sudo apt update
+
+  145  sudo apt install apt-transport-https ca-certificates curl software-properties-common
+
+  146  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+  147  sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+
+  148  sudo apt update
+
+  149  apt-cache policy docker-ce
+
+  150  sudo apt install docker-ce
+
+  151  sudo systemctl status docker
+
+  152  sudo usermod -aG docker ${mosh}
+
+  153  su - ${mosh}
+
+  154  docker run hello-world
+
+  155  --help
+
+  156  sudo usermod -aG docker ${mosh}
+
+  157  docker run hello-world
+
+  158  sudo groupadd docker
+
+  159  sudo usermod -aG docker $USER
+
+  160  docker run hello-world
+
+  161  sudo usermod -aG docker $mosh
+
+  162  sudo docker ps -a
+
+  163  sudo groupadd docker
+
+  164  docker run -tid --name=busybox1 busybox
+
+  165  docker network ls
+
+  166  docker run hello-world
+
+  167  sudo systemctl status docker
+
+  168  docker run hello-world
+
+  169  docker run -tid --name=busybox1 busybox
+
+  170  docker run -tid --name=busybox2 busybox
+
+  171  docker network inspect bridge
+
+  172  docker-compose -f .\busybox-1.yml up -d
+
+  173  sudo apt  install docker-compose 
+
+  174  docker-compose -f .\busybox-1.yml up -d
+
+  175  docker network create busybox-network
+
+  176  docker-compose -f .\busybox-1.yml up -d
+
+  177  docker attach busybox1
+
+  178  touch myscript.sh
+
+  179  nano myscript.sh
+
+  180  chmod -x myscript.sh
+
+  181  ./myscript.sh
+
+  182  chmod -x myscript.sh
+
+  183  ./myscript.sh
+
+  184  sudo /usr/bin/myscript.sh --check
+
+  185  ./myscript.sh
+
+  186  bush ./myscript.sh
+
+  187  bash ./myscript.sh
+
+  188  ./myscript.sh
+
+  189  bash ./myscript.sh
+
+  190  touch script.sh
+
+  191  nano script.sh
+
+  192  bash ./script.sh
+
+  193  ./myscript.sh
+
+  194  bash ./myscript.sh
+
+  195  systemctl enable docker
+
+  196  systemctl start docker
+
+  197  mkdir -p /opt/docker/web-server
+
+  198  sudo mkdir -p /opt/docker/web-server
+
+  199  cd /opt/docker/web-server/
+
+  200  docker build -t final
+
+  201  docker build  final
+
+  202  docker build  test
+
+  203  docker build -t final
+
+  204  docker build -t 
+
+  205  docker build -
+
+  206  docker build -t MyFinal
+
+  207  docker build -t - MyFinal
+
+  208  docker build mattt
+
+  209  docker build -t 'final'
+
+  210  cd /opt/docker/web-server/
+
+  211  vi Dockerfile
+
+  212  mkdir html
+
+  213  vi html/index.php
+
+  214  docker build -t dmosk/webapp:v1 .
+
+  215  docker images
+
+  216  docker run --name web_server -d -p 80:80 dmosk/webapp:v1
+
+  217  docker-compose up --build -d
+
+  218  sudo apt-get install docker-compose
+
+  219  sudo mkdir -p /opt/docker/web-server
+
+  220  cd /opt/docker/web-server/
+
+  221  vi Dockerfile
+
+  222  mkdir html
+
+  223  vi html/index.php
+
+  224  docker build -t dmosk/webapp:v1 .
+
+  225  docker images
+
+  226  vi Dockerfile
+
+  227  docker build -t dmosk/webapp:v1 .
+
+  228  cd /docker/
+
+  229  docker-compose up -d
+
+  230  docker images
+
+  231  docker ps
+
+  232  /home/mosh/docker/docker-compose -f lab_dk.yml up -d
+
+  233  subo 
+
+  234  subo /home/mosh/docker docker-compose -f lab_dk.yml up -d 
+
+  235  /home/mosh/docker docker-compose -f lab_dk.yml up -d 
+
+  236  /home/mosh/docker/docker-compose -f lab_dk.yml up -d 
+
+  237  cd /home/docker
+
+  238  cd /home/mosh/docker
+
+  239  docker-compose -f lab_dk.yml up -d 
+
+  240  docker-compose -f lab_dk.yml up  
+
+  241  up
+
+  242  /home/mosh/docker# docker-compose -f lab_dk.yml up -d
+
+  243  /home/mosh/docker# docker-compose -f lab.yml up -d
+
+  244  cd /home/docker 
+
+  245  cd /home/mosh/docker
+
+  246  /home/# docker-compose -f lab.yml up -
+
+  247  /home/ docker-compose -f lab.yml up -
+
+  248  /home/mosh/ docker-compose -f lab.yml up -
+
+  249  /home/mosh docker-compose -f lab.yml up -
+
+  250  /home/mosh# docker-compose -f lab.yml up -
+
+  251  /home/mosh/Docker# docker-compose -f lab.yml up -d
+
+  252  /home/mosh/Docker# docker-compose -f lab.yml up
+
+  253  /home/mosh/Docker# docker-compose lab.yml up -d
+
+  254  cd /home/mosh/docker
+
+  255  cd /home/mosh/Docker
+
+  256  docker-compose lab.yml up -d
+
+  257  lab up -d
+
+  258  cd /home/mosh/Docker
+
+  259  cd /n
+
+  260  cd /home/mosh/Docker/n
+
+  261  docker-compose dev.yml up -d
+
+  262  docker-compose -f dev.yml up -d
+
+  263  cd /var/log
+
+  264  ls
+
+  265  ls nginx
+
+  266  cat > Домашние_животные
+
+  267  cat > Вьючные_животными
+
+  268  cat Домашние_животные Вьючные_животными > Животныe
+
+  269  sudo dpkg -i mysql-apt-config_0.8.22-1_all.deb
+
+  270  sudo dpkg -r mysql-apt-config
+
+ 
+
